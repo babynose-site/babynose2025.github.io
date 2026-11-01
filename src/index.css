@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-vazir: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-epilogue: 'Epilogue', sans-serif;
+    --font-quicksand: 'Quicksand', sans-serif;
+  }
+
+  html {
+    font-family: var(--font-vazir);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-vazir);
+    background-color: #F5F8FA;
+    color: #19384A;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Stitch Tokens & Utility Classes */
+.font-display {
+  font-family: var(--font-vazir);
+  font-weight: 800;
+}
+
+.font-body {
+  font-family: var(--font-vazir);
+}
+
+.font-en-display {
+  font-family: var(--font-epilogue);
+}
+
+.font-en-body {
+  font-family: var(--font-quicksand);
+}
+
+/* Asymmetric Droplet shape (RTL: top-right 3rem, top-left 3rem, bottom-left 1rem, bottom-right 3rem) */
+.rounded-droplet {
+  border-radius: 3rem 3rem 1rem 3rem;
+}
+
+.rounded-droplet-reverse {
+  border-radius: 3rem 3rem 3rem 1rem;
+}
+
+/* Micro-glass and Droplet Glass */
+.glass-badge {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.glass-nav {
+  background: rgba(245, 248, 250, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(39, 139, 203, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Elevation Tokens */
+.shadow-soft-1 {
+  box-shadow: 0px 4px 16px -2px rgba(25, 56, 74, 0.04), 0px 1px 3px 0px rgba(25, 56, 74, 0.02);
+}
+
+.shadow-soft-2 {
+  box-shadow: 0px 12px 28px -4px rgba(25, 56, 74, 0.07), 0px 4px 8px -2px rgba(39, 139, 203, 0.04);
+}
+
+.shadow-soft-3 {
+  box-shadow: 0px 24px 48px -8px rgba(25, 56, 74, 0.12), 0px 8px 16px -4px rgba(88, 201, 173, 0.08);
+}
+
+.shadow-mint-glow {
+  box-shadow: 0 8px 20px rgba(88, 201, 173, 0.35);
+}
+
+.shadow-ocean-glow {
+  box-shadow: 0 8px 20px rgba(39, 139, 203, 0.25);
+}
+
+/* Custom scrollbar for clean UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #bcc9c4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58C9AD;
+}
+

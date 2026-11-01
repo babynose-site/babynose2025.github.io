@@ -1,0 +1,6 @@
+{
+  "name": "بیبی‌نوز | BabyNose",
+  "description": "پلتفرم تخصصی بهداشت مجاری تنفسی، پاکسازی ایمن بینی نوزادان و راهنمای بالینی والدین",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
